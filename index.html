@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Student Registration Form</h2>
+
+        <form>
+
+            <label>Full Name:</label>
+            <input type="text" name="fullname" required>
+
+            <label>Email:</label>
+            <input type="email" name="email" required>
+
+            <label>Password:</label>
+            <input type="password" name="password" required>
+
+            <label>Gender:</label>
+            <div class="radio-group">
+                <input type="radio" name="gender"> Male
+                <input type="radio" name="gender"> Female
+                <input type="radio" name="gender"> Other
+            </div>
+
+            <label>Date of Birth:</label>
+            <input type="date" name="dob">
+
+            <label>Course:</label>
+            <select name="course">
+                <option value="">--Select Course--</option>
+                <option>BCA</option>
+                <option>BBA</option>
+                <option>B.Tech</option>
+                <option>MCA</option>
+            </select>
+
+            <label>Phone Number:</label>
+            <input type="tel" name="phone">
+
+            <label>Address:</label>
+            <textarea name="address" rows="4"></textarea>
+
+            <div class="btn-group">
+                <input type="submit" value="Register">
+                <input type="reset" value="Reset">
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
